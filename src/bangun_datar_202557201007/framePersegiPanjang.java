@@ -2,29 +2,29 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bangun_datar;
+package bangun_datar_202557201007;
 
 /**
  *
  * @author HP 14s Ryzen
  */
-public class frameTrapesium extends javax.swing.JFrame {
+public class framePersegiPanjang extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameTrapesium.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(framePersegiPanjang.class.getName());
 
     /**
-     * Creates new form frameTrapesium
+     * Creates new form framePersegiPanjang
      */
-    public frameTrapesium() {
+    public framePersegiPanjang() {
         initComponents();
         reset();
     }
     void reset(){
-        tSisiAtas.setText(null);
-        tSisiBawah.setText(null);
-        tTinggi.setText(null);
+        tPanjang.setText(null);
+        tLebar.setText(null);
         tLuas.setText(null);
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -34,45 +34,20 @@ public class frameTrapesium extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        tLuas = new javax.swing.JLabel();
         btnHitung = new javax.swing.JButton();
         btnReset = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnKembali = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        lSisiAtas = new javax.swing.JLabel();
-        lSisiBawah = new javax.swing.JLabel();
-        tSisiAtas = new javax.swing.JTextField();
-        tSisiBawah = new javax.swing.JTextField();
-        lTinggi = new javax.swing.JLabel();
-        tTinggi = new javax.swing.JTextField();
+        lPanjang = new javax.swing.JLabel();
+        lLebar = new javax.swing.JLabel();
+        tPanjang = new javax.swing.JTextField();
+        tLebar = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        tLuas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Trapesium");
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("output"));
-        jPanel2.setToolTipText("");
-
-        tLuas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        tLuas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tLuas.setText("jLabel2");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 15, Short.MAX_VALUE))
-        );
+        setTitle("Persegi Panjang");
 
         btnHitung.setText("Hitung");
         btnHitung.addActionListener(this::btnHitungActionPerformed);
@@ -82,54 +57,76 @@ public class frameTrapesium extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TRAPESIUM");
+        jLabel1.setText("PERSEGI PANJANG");
 
         btnKembali.setText("Kembali");
         btnKembali.addActionListener(this::btnKembaliActionPerformed);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("input"));
 
-        lSisiAtas.setText("Sisi Atas ");
+        lPanjang.setText("Panjang");
 
-        lSisiBawah.setText("Sisi Bawah");
-
-        tSisiAtas.addActionListener(this::tSisiAtasActionPerformed);
-
-        lTinggi.setText("Tinggi");
+        lLebar.setText("Lebar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lSisiAtas)
-                    .addComponent(lSisiBawah, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(lPanjang, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lLebar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tSisiAtas)
-                    .addComponent(tSisiBawah, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                    .addComponent(tTinggi))
-                .addContainerGap(32, Short.MAX_VALUE))
+                    .addComponent(tPanjang)
+                    .addComponent(tLebar, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(11, 11, 11)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lSisiAtas)
-                    .addComponent(tSisiAtas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(lPanjang)
+                    .addComponent(tPanjang, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lSisiBawah)
-                    .addComponent(tSisiBawah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lTinggi)
-                    .addComponent(tTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                    .addComponent(lLebar)
+                    .addComponent(tLebar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22))
+        );
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("output"));
+        jPanel2.setToolTipText("");
+
+        tLuas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        tLuas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tLuas.setText("jLabel2");
+        tLuas.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                tLuasAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -164,10 +161,10 @@ public class frameTrapesium extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnHitung, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnReset, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnHitung)
+                    .addComponent(btnReset))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(7, 7, 7)
                 .addComponent(btnKembali)
@@ -179,17 +176,17 @@ public class frameTrapesium extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double a = Double.parseDouble(tSisiAtas.getText());
-        double b = Double.parseDouble(tSisiBawah.getText());
-        double tinggi = Double.parseDouble(tTinggi.getText());
+        double panjang = Double.parseDouble(tPanjang.getText());
+        double lebar = Double.parseDouble(tLebar.getText());
         //mengambil teks pakai getText
-        double luas = 0.5 * (a + b) * tinggi;
+        double luas = panjang * lebar;
         tLuas.setText(String.valueOf(luas));
     }//GEN-LAST:event_btnHitungActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
         // TODO add your handling code here:
         reset();
+
     }//GEN-LAST:event_btnResetActionPerformed
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
@@ -198,9 +195,9 @@ public class frameTrapesium extends javax.swing.JFrame {
         new beranda().setVisible(true);
     }//GEN-LAST:event_btnKembaliActionPerformed
 
-    private void tSisiAtasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tSisiAtasActionPerformed
+    private void tLuasAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tLuasAncestorAdded
         // TODO add your handling code here:
-    }//GEN-LAST:event_tSisiAtasActionPerformed
+    }//GEN-LAST:event_tLuasAncestorAdded
 
     /**
      * @param args the command line arguments
@@ -224,7 +221,7 @@ public class frameTrapesium extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameTrapesium().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new framePersegiPanjang().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -234,12 +231,10 @@ public class frameTrapesium extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lSisiAtas;
-    private javax.swing.JLabel lSisiBawah;
-    private javax.swing.JLabel lTinggi;
+    private javax.swing.JLabel lLebar;
+    private javax.swing.JLabel lPanjang;
+    private javax.swing.JTextField tLebar;
     private javax.swing.JLabel tLuas;
-    private javax.swing.JTextField tSisiAtas;
-    private javax.swing.JTextField tSisiBawah;
-    private javax.swing.JTextField tTinggi;
+    private javax.swing.JTextField tPanjang;
     // End of variables declaration//GEN-END:variables
 }

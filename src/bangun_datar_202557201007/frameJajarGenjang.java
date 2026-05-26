@@ -2,30 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package bangun_datar;
+package bangun_datar_202557201007;
 
 /**
  *
  * @author HP 14s Ryzen
  */
-public class frameSegitiga extends javax.swing.JFrame {
+public class frameJajarGenjang extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameSegitiga.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameJajarGenjang.class.getName());
 
     /**
-     * Creates new form frameSegitiga
+     * Creates new form frameJajarGenjang
      */
-    public frameSegitiga() {    //constructor (method yang dijalankan diawal)
+    public frameJajarGenjang() {
         initComponents();
-        reset();    
+        reset();
     }
-    
     void reset(){
-         tAlass.setText(null);
-        tTingii.setText(null);
+        tAlas.setText(null);
+        tTinggi.setText(null);
         tLuas.setText(null);
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,24 +33,30 @@ public class frameSegitiga extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnHitung = new javax.swing.JButton();
+        btnReset = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnKembali = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         lAlas = new javax.swing.JLabel();
         lTinggi = new javax.swing.JLabel();
-        tAlass = new javax.swing.JTextField();
-        tTingii = new javax.swing.JTextField();
+        tAlas = new javax.swing.JTextField();
+        tTinggi = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         tLuas = new javax.swing.JLabel();
-        btnHitung = new javax.swing.JButton();
-        btnReset = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Segitiga");
+        setTitle("Jajar Genjang");
+
+        btnHitung.setText("Hitung");
+        btnHitung.addActionListener(this::btnHitungActionPerformed);
+
+        btnReset.setText("Reset");
+        btnReset.addActionListener(this::btnResetActionPerformed);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Segitiga");
+        jLabel1.setText("JAJAR GENJANG");
 
         btnKembali.setText("Kembali");
         btnKembali.addActionListener(this::btnKembaliActionPerformed);
@@ -63,6 +67,8 @@ public class frameSegitiga extends javax.swing.JFrame {
 
         lTinggi.setText("Tinggi");
 
+        tAlas.addActionListener(this::tAlasActionPerformed);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -72,11 +78,11 @@ public class frameSegitiga extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lAlas, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tAlass)
-                    .addComponent(tTingii, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
-                .addContainerGap(27, Short.MAX_VALUE))
+                    .addComponent(tAlas)
+                    .addComponent(tTinggi, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -84,11 +90,11 @@ public class frameSegitiga extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lAlas)
-                    .addComponent(tAlass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lTinggi)
-                    .addComponent(tTingii, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
 
@@ -114,12 +120,6 @@ public class frameSegitiga extends javax.swing.JFrame {
                 .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 15, Short.MAX_VALUE))
         );
-
-        btnHitung.setText("Hitung");
-        btnHitung.addActionListener(this::btnHitungActionPerformed);
-
-        btnReset.setText("Reset");
-        btnReset.addActionListener(this::btnResetActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,26 +166,30 @@ public class frameSegitiga extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
+        // TODO add your handling code here:
+        double alas = Double.parseDouble(tAlas.getText());
+        double tinggi = Double.parseDouble(tTinggi.getText());
+        //mengambil teks pakai getText
+        double luas = alas * tinggi;
+        tLuas.setText(String.valueOf(luas));
+    }//GEN-LAST:event_btnHitungActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        // TODO add your handling code here:
+        reset();
+
+    }//GEN-LAST:event_btnResetActionPerformed
+
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
         // TODO add your handling code here:
         dispose();
         new beranda().setVisible(true);
     }//GEN-LAST:event_btnKembaliActionPerformed
 
-    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+    private void tAlasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tAlasActionPerformed
         // TODO add your handling code here:
-        reset();
-       
-    }//GEN-LAST:event_btnResetActionPerformed
-
-    private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
-        // TODO add your handling code here:
-        double alas = Double.parseDouble(tAlass.getText());
-        double tinggi = Double.parseDouble(tTingii.getText());
-        //mengambil teks pakai getText
-        double luas = 0.5 * alas * tinggi;
-        tLuas.setText(String.valueOf(luas));
-    }//GEN-LAST:event_btnHitungActionPerformed
+    }//GEN-LAST:event_tAlasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,7 +213,7 @@ public class frameSegitiga extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameSegitiga().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameJajarGenjang().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -221,8 +225,8 @@ public class frameSegitiga extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lAlas;
     private javax.swing.JLabel lTinggi;
-    private javax.swing.JTextField tAlass;
+    private javax.swing.JTextField tAlas;
     private javax.swing.JLabel tLuas;
-    private javax.swing.JTextField tTingii;
+    private javax.swing.JTextField tTinggi;
     // End of variables declaration//GEN-END:variables
 }
