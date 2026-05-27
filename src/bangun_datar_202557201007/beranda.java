@@ -170,7 +170,7 @@ public class beranda extends javax.swing.JFrame {
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
         System.exit(0); //menutup
-        //dispose();        //hanya untuk menyembunyikan
+        //dispose();    //hanya untuk menyembunyikan
         //setVisible(false)
     }//GEN-LAST:event_btnExitActionPerformed
 

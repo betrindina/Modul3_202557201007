@@ -21,8 +21,8 @@ public class frameSegitiga extends javax.swing.JFrame {
     }
     
     void reset(){
-         tAlass.setText(null);
-        tTingii.setText(null);
+         tAlas.setText(null);
+        tTinggi.setText(null);
         tLuas.setText(null);
     }
 
@@ -40,8 +40,8 @@ public class frameSegitiga extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lAlas = new javax.swing.JLabel();
         lTinggi = new javax.swing.JLabel();
-        tAlass = new javax.swing.JTextField();
-        tTingii = new javax.swing.JTextField();
+        tAlas = new javax.swing.JTextField();
+        tTinggi = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         tLuas = new javax.swing.JLabel();
         btnHitung = new javax.swing.JButton();
@@ -74,8 +74,8 @@ public class frameSegitiga extends javax.swing.JFrame {
                     .addComponent(lTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tAlass)
-                    .addComponent(tTingii, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
+                    .addComponent(tAlas)
+                    .addComponent(tTinggi, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -84,11 +84,11 @@ public class frameSegitiga extends javax.swing.JFrame {
                 .addGap(11, 11, 11)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lAlas)
-                    .addComponent(tAlass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lTinggi)
-                    .addComponent(tTingii, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
 
@@ -180,8 +180,8 @@ public class frameSegitiga extends javax.swing.JFrame {
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
         // TODO add your handling code here:
-        double alas = Double.parseDouble(tAlass.getText());
-        double tinggi = Double.parseDouble(tTingii.getText());
+        double alas = Double.parseDouble(tAlas.getText());
+        double tinggi = Double.parseDouble(tTinggi.getText());
         //mengambil teks pakai getText
         double luas = 0.5 * alas * tinggi;
         tLuas.setText(String.valueOf(luas));
@@ -221,8 +221,8 @@ public class frameSegitiga extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lAlas;
     private javax.swing.JLabel lTinggi;
-    private javax.swing.JTextField tAlass;
+    private javax.swing.JTextField tAlas;
     private javax.swing.JLabel tLuas;
-    private javax.swing.JTextField tTingii;
+    private javax.swing.JTextField tTinggi;
     // End of variables declaration//GEN-END:variables
 }

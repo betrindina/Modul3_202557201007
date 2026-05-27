@@ -111,8 +111,8 @@
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="tAlass" max="32767" attributes="0"/>
-                      <Component id="tTingii" pref="184" max="32767" attributes="0"/>
+                      <Component id="tAlas" max="32767" attributes="0"/>
+                      <Component id="tTinggi" pref="184" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="27" max="32767" attributes="0"/>
               </Group>
@@ -124,12 +124,12 @@
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lAlas" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tAlass" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tAlas" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="29" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tTingii" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tTinggi" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
@@ -147,9 +147,9 @@
             <Property name="text" type="java.lang.String" value="Tinggi"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tAlass">
+        <Component class="javax.swing.JTextField" name="tAlas">
         </Component>
-        <Component class="javax.swing.JTextField" name="tTingii">
+        <Component class="javax.swing.JTextField" name="tTinggi">
         </Component>
       </SubComponents>
     </Container>
